@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -5,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#087f5b">
 <meta name="description" content="ALA EXPRESS - خدمات التوصيل السريع والآمن">
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="./manifest.json">
 <title>ALA EXPRESS</title>
 
 <style>
@@ -97,89 +98,85 @@ footer{text-align:center;padding:20px;color:#666;font-size:13px}
 
 <main class="container">
 
-  <section class="card">
-    <h2>🚚 خدماتنا</h2>
-    <div class="service">📦 توصيل الطلبيات والطرود</div>
-    <div class="service">🛍️ شراء المنتجات من المحلات والأسواق وتوصيلها</div>
-    <div class="service">🤝 خدمة التوصيل للتجار والأفراد</div>
-    <div class="service">⚡ السرعة والأمان والمعاملة الموثوقة</div>
-    <p><strong>🕒 الخدمة متوفرة 24 ساعة لاستقبال الطلبات.</strong></p>
-  </section>
+<section class="card">
+<h2>🚚 خدماتنا</h2>
+<div class="service">📦 توصيل الطلبيات والطرود</div>
+<div class="service">🛍️ شراء المنتجات من المحلات والأسواق وتوصيلها</div>
+<div class="service">🤝 خدمة التوصيل للتجار والأفراد</div>
+<div class="service">⚡ السرعة والأمان والمعاملة الموثوقة</div>
+<p><strong>🕒 الخدمة متوفرة 24 ساعة لاستقبال الطلبات.</strong></p>
+</section>
 
-  <section class="card">
-    <h2>📍 مناطق التوصيل</h2>
-    <label for="zone">اختر منطقة التوصيل *</label>
-    <select id="zone" required>
-      <option value="">-- اختر المنطقة --</option>
-      <option>تمالوس</option>
-      <option>القل وجميع القرى والمداشر</option>
-      <option>كركرة</option>
-      <option>بين الويدان</option>
-      <option>حروش</option>
-      <option>مزغيش</option>
-      <option>أم الطوب</option>
-      <option>عين قشرة</option>
-      <option>الجمالة</option>
-      <option>بارون</option>
-      <option>البياطة</option>
-      <option>المراية</option>
-      <option>الطاحونة</option>
-      <option>الدمنية</option>
-      <option>19 و21</option>
-      <option>منطقة أخرى</option>
-    </select>
-  </section>
+<section class="card">
+<h2>📍 مناطق التوصيل</h2>
+<label for="zone">اختر منطقة التوصيل *</label>
+<select id="zone" required>
+<option value="">-- اختر المنطقة --</option>
+<option>تمالوس</option>
+<option>القل وجميع القرى والمداشر</option>
+<option>كركرة</option>
+<option>بين الويدان</option>
+<option>حروش</option>
+<option>مزغيش</option>
+<option>أم الطوب</option>
+<option>عين قشرة</option>
+<option>الجمالة</option>
+<option>بارون</option>
+<option>البياطة</option>
+<option>المراية</option>
+<option>الطاحونة</option>
+<option>الدمنية</option>
+<option>19 و21</option>
+<option>منطقة أخرى</option>
+</select>
+</section>
 
-  <section class="card">
-    <h2>📝 اطلب خدمة التوصيل</h2>
+<section class="card">
+<h2>📝 اطلب خدمة التوصيل</h2>
 
-    <form id="orderForm">
-      <label for="name">الاسم الكامل *</label>
-      <input id="name" type="text" required maxlength="100"
-             placeholder="اكتب اسمك الكامل">
+<form id="orderForm">
 
-      <label for="phone">رقم الهاتف *</label>
-      <input id="phone" type="tel" required maxlength="20"
-             placeholder="05 أو 06 أو 07">
+<label for="name">الاسم الكامل *</label>
+<input id="name" type="text" required maxlength="100" placeholder="اكتب اسمك الكامل">
 
-      <label for="service">نوع الخدمة *</label>
-      <select id="service" required>
-        <option value="">-- اختر الخدمة --</option>
-        <option>توصيل طرد</option>
-        <option>شراء منتج من محل أو سوق</option>
-        <option>توصيل طلبية</option>
-        <option>خدمة للتجار</option>
-        <option>خدمة أخرى</option>
-      </select>
+<label for="phone">رقم الهاتف *</label>
+<input id="phone" type="tel" required maxlength="20" placeholder="05 أو 06 أو 07">
 
-      <label for="pickup">مكان الاستلام أو الشراء *</label>
-      <input id="pickup" type="text" required maxlength="200"
-             placeholder="اسم المحل أو عنوان الاستلام">
+<label for="service">نوع الخدمة *</label>
+<select id="service" required>
+<option value="">-- اختر الخدمة --</option>
+<option>توصيل طرد</option>
+<option>شراء منتج من محل أو سوق</option>
+<option>توصيل طلبية</option>
+<option>خدمة للتجار</option>
+<option>خدمة أخرى</option>
+</select>
 
-      <label for="address">عنوان التوصيل بالتفصيل *</label>
-      <textarea id="address" required maxlength="1000"
-                placeholder="البلدية، الحي، الشارع، وأي علامة مميزة"></textarea>
+<label for="pickup">مكان الاستلام أو الشراء *</label>
+<input id="pickup" type="text" required maxlength="200" placeholder="اسم المحل أو عنوان الاستلام">
 
-      <label for="details">تفاصيل إضافية</label>
-      <textarea id="details" maxlength="1500"
-                placeholder="وصف الطرد أو المنتج أو أي معلومات أخرى"></textarea>
+<label for="address">عنوان التوصيل بالتفصيل *</label>
+<textarea id="address" required maxlength="1000" placeholder="البلدية، الحي، الشارع، وأي علامة مميزة"></textarea>
 
-      <button id="submitButton" type="submit">إرسال طلب التوصيل</button>
-    </form>
+<label for="details">تفاصيل إضافية</label>
+<textarea id="details" maxlength="1500" placeholder="وصف الطرد أو المنتج أو أي معلومات أخرى"></textarea>
 
-    <div id="result" class="result" role="status"></div>
+<button id="submitButton" type="submit">إرسال طلب التوصيل</button>
+</form>
 
-    <p class="notice">
-      ⚠️ يرجى التأكد من صحة رقم الهاتف والعنوان.
-      إرسال الطلب لا يعني تأكيد التوصيل؛ سيتم تأكيده بعد مراجعة الطلب.
-    </p>
-  </section>
+<div id="result" class="result" role="status"></div>
+
+<p class="notice">
+⚠️ يرجى التأكد من صحة رقم الهاتف والعنوان.
+إرسال الطلب لا يعني تأكيد التوصيل؛ سيتم تأكيده بعد مراجعة الطلب.
+</p>
+</section>
 
 </main>
 
 <footer>
-  <p>ALA EXPRESS 🚚</p>
-  <p>خدمات التوصيل السريع والآمن</p>
+<p>ALA EXPRESS 🚚</p>
+<p>خدمات التوصيل السريع والآمن</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -219,6 +216,7 @@ form.addEventListener("submit", async function(event) {
   }
 
   const phonePattern = /^[0-9+\s()-]{8,20}$/;
+
   if (!phonePattern.test(phone)) {
     alert("يرجى إدخال رقم هاتف صحيح.");
     return;
@@ -246,11 +244,9 @@ form.addEventListener("submit", async function(event) {
         statut: "جديد"
       }]);
 
-  if (error) {
-  console.error("Supabase error:", error);
-  throw new Error(error.message);
-}
-      throw error;
+    if (error) {
+      console.error("Supabase error:", error);
+      throw new Error(error.message);
     }
 
     result.textContent =
@@ -259,7 +255,7 @@ form.addEventListener("submit", async function(event) {
       "الهاتف: " + phone + "\n" +
       "المنطقة: " + zone + "\n" +
       "الخدمة: " + service + "\n\n" +
-      "احتفظ بمعلوماتك، وسيتم تأكيد الطلب بعد مراجعته.";
+      "سيتم تأكيد الطلب بعد مراجعته.";
 
     form.reset();
 
@@ -268,7 +264,6 @@ form.addEventListener("submit", async function(event) {
 
     result.textContent =
       "تعذر إرسال الطلب إلى قاعدة البيانات حاليًا.\n\n" +
-      "قد تحتاج قاعدة البيانات إلى إعداد صلاحيات استقبال الطلبات. " +
       "لم يتم تأكيد حفظ طلبك؛ يرجى المحاولة لاحقًا.";
 
   } finally {
@@ -278,5 +273,19 @@ form.addEventListener("submit", async function(event) {
 });
 </script>
 
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker.register("./sw.js")
+      .then(function() {
+        console.log("ALA EXPRESS Service Worker registered");
+      })
+      .catch(function(error) {
+        console.error("Service Worker error:", error);
+      });
+  });
+}
+</script>
+
 </body>
-        </html>
+</html>
